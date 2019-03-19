@@ -75,3 +75,9 @@ With PERL_PRELOAD_MODULES set to true, this statement:
  use preloadable 'Foo';
 
 will simply instruct B<preloadable> to C<require> C<Foo> at compile-time.
+
+
+=head1 NOTES
+
+L<B::Hooks::AtRuntime>'s startup overhead is a bit heavier than I'd like. Will
+probably fork to create a lite alternative.
